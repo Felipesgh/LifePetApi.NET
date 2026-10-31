@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>LifePetApi</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="LifePet.Domain\**" />
+    <Compile Remove="LifePet.Application\**" />
+    <Compile Remove="LifePet.Infrastructure\**" />
+    <Compile Remove="LifePet.Domain.Tests\**" />
+    <Compile Remove="LifePet.Application.Tests\**" />
+    <Compile Remove="LifePet.Api.Tests\**" />
+    <Content Remove="LifePet.Domain\**" />
+    <Content Remove="LifePet.Application\**" />
+    <Content Remove="LifePet.Infrastructure\**" />
+    <Content Remove="LifePet.Domain.Tests\**" />
+    <Content Remove="LifePet.Application.Tests\**" />
+    <Content Remove="LifePet.Api.Tests\**" />
+    <EmbeddedResource Remove="LifePet.Domain\**" />
+    <EmbeddedResource Remove="LifePet.Application\**" />
+    <EmbeddedResource Remove="LifePet.Infrastructure\**" />
+    <EmbeddedResource Remove="LifePet.Domain.Tests\**" />
+    <EmbeddedResource Remove="LifePet.Application.Tests\**" />
+    <EmbeddedResource Remove="LifePet.Api.Tests\**" />
+    <None Remove="LifePet.Domain\**" />
+    <None Remove="LifePet.Application\**" />
+    <None Remove="LifePet.Infrastructure\**" />
+    <None Remove="LifePet.Domain.Tests\**" />
+    <None Remove="LifePet.Application.Tests\**" />
+    <None Remove="LifePet.Api.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.12.0" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.12.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.12.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.12.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.12.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="LifePet.Application\LifePet.Application.csproj" />
+    <ProjectReference Include="LifePet.Infrastructure\LifePet.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

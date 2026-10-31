@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="LifePet.Application.Tests/LifePet.Application.Tests.csproj" />
+  <Project Path="LifePet.Application/LifePet.Application.csproj" />
+  <Project Path="LifePet.Domain.Tests/LifePet.Domain.Tests.csproj" />
+  <Project Path="LifePet.Api.Tests/LifePet.Api.Tests.csproj" />
+  <Project Path="LifePet.Domain/LifePet.Domain.csproj" />
+  <Project Path="LifePet.Infrastructure/LifePet.Infrastructure.csproj" />
+  <Project Path="LifePetApi.csproj" />
+</Solution>
